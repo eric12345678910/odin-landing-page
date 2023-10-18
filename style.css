@@ -5,10 +5,11 @@ body {
 .header{
     display:flex;
     flex-direction: row;
+    flex: 1 1 auto;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 10px 100px;
+    padding: 0 100px;
 
     font-family: futura;
     background-color: #1F2937;
@@ -19,12 +20,11 @@ body {
 
 .logo {
     display: flex;
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
     margin: 10px 0;
-    height: 100px;
 
-    border: 5px white dashed;
+    --<border: 5px white dashed;>--
 }
 
 li {
@@ -50,6 +50,7 @@ a {
 .header .col{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
 
 
     --<border: 5px yellow dashed;>--
@@ -69,35 +70,105 @@ a {
     --<border: 5px lightpink dotted;>--
 }
 
-.header .col .button .text{
-    --<border: 5px lightsalmon dotted;>--
+.header .col .button{
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 .header .image{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 350px;
+    border-radius: 10px;
+    margin-left: 100px;
 
-    border: 5px green dashed;
+    --<border: 5px green dashed;>--
 }
-
 
 .main-content{
     display:flex;
     flex-direction:column;
 }
 
+
+.main-content{
+    --<border: 10px skyblue dotted;>--
+}
+
 .block-01{
     display:flex;
     flex-direction: column;
-
-    border: 5px gold dashed;
+    padding: 0 50px 10px;
+    
+    --<border: 5px gold dashed;>--
 }
 
-.block-01 .images{
+.block-01 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+
+
+    --<border: 5px dashed salmon;>--
+}
+
+.block-01 .images {
+    display: flex;
+    gap: 20px;
+
+    --<border: blue dashed 5px;>--
+}
+
+.block-01 .images .object {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+
+    --<border: 5px red dotted;>--
+}
+
+.block-01 .images .object .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+
+
+    --<border: 5px red dotted;>--
+}
+
+
+
+.block-01 .images img {
     display:flex;
     flex-direction: row;
-    border: 2px solid #1F2937;
-    border-radius: 20px;
+    flex: 1 1 auto;;
+    border-radius: 5px;
+    width: 150px;
+    margin:0;
+}
+
+.block-02{
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    padding: 10px 400px;
 }
 
 
