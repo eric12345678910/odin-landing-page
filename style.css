@@ -1,5 +1,10 @@
 body {
-    margin:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    
 }
 
 .header{
@@ -13,6 +18,7 @@ body {
 
     font-family: futura;
     background-color: #1F2937;
+
 
 
     --<border: 5px rgb(227, 216, 216) dotted;>--
@@ -64,8 +70,10 @@ a {
     --<border: 5px skyblue dotted;>--
 }
 .header .col .text{
+    display: flex;
     font-size: 18px;
     color: #e5e7eb;
+
 
     --<border: 5px lightpink dotted;>--
 }
@@ -79,6 +87,7 @@ a {
     padding: 10px;
     border-radius: 20px;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .header .image{
@@ -99,13 +108,17 @@ a {
 
 
 .main-content{
-    --<border: 10px skyblue dotted;>--
-}
+    display: flex;
+    flex: 1 1 auto;
+}   
 
 .block-01{
     display:flex;
+    flex: 1 1 auto;
     flex-direction: column;
     padding: 0 50px 10px;
+    min-height: 300px;
+    
     
     --<border: 5px gold dashed;>--
 }
@@ -164,13 +177,90 @@ a {
 }
 
 .block-02{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 10px 400px;
+    justify-content: center;
+
     background-color: #E5E7EB;
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
-    padding: 10px 400px;
+    min-height: 250px;
+
 }
 
+.block-02 .author{
+    text-align: right;
+}
 
+.block-03 {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+.block-03 .blue-box{
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    justify-content: space-between;
+    border-radius: 5px;
+
+
+    width: 600px;
+    height: 100px;
+
+}
+
+.block-03 .blue-box .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+
+}
+
+.block-03 .title{
+    font-size: 18px;
+    color: #e5e7eb;
+    justify-content: center;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.block-03 .blue-box .text{
+    text-size: 30px;
+    color: #e5e7eb;
+    text-align: left;
+}
+
+.block-03 .blue-box .button{    
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.footer{
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 0;
+
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: #1F2937;
+    color: #e5e7eb;
+
+    padding: 10px;
+}
 
 
